@@ -1,0 +1,12 @@
+{
+  "name": "java_script_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloWorld.js",
+  "scripts": {
+    "test": "node helloWorld.js"
+    
+  },
+  "author": "",
+  "license": "ISC"
+}
