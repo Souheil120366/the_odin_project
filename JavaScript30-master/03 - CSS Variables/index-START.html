@@ -13,7 +13,7 @@
 
     <label for="blur">Blur:</label>
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
-
+    
     <label for="base">Base Color</label>
     <input id="base" type="color" name="base" value="#ffc600">
   </div>
@@ -25,7 +25,13 @@
     /*
       misc styles, nothing to do with CSS variables
     */
-
+    :root {
+      --blur: "blur";
+    }
+    img {
+    filter: var(--blur);
+    -webkit-filter: blur(10px);
+    }
     body {
       text-align: center;
       background: #193549;

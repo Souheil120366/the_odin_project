@@ -38,6 +38,24 @@ describe('sum', () => {
 	});
 });
 
+describe('sum2', () => {
+	test('computes the sum of an empty array', () => {
+		expect(calculator.sum2([])).toBe(0);
+	});
+
+	test('computes the sum of an array of one number', () => {
+		expect(calculator.sum2([7])).toBe(7);
+	});
+
+	test('computes the sum of an array of two numbers', () => {
+		expect(calculator.sum2([7,11])).toBe(18);
+	});
+
+	test('computes the sum of an array of many numbers', () => {
+		expect(calculator.sum2([1,3,5,7,9])).toBe(25);
+	});
+});
+
 describe('multiply', () => {
 	test('multiplies two numbers', () => {
 		expect(calculator.multiply([2,4])).toBe(8);

@@ -17,6 +17,12 @@ const sum = function(arr) {
   return ans
 };
 
+function myFunc(total, num) {
+  return total + num;
+}
+
+const sum2 = function(arr) {return arr.reduce((myFunc),0)};
+
 const multiply = function(arr) {
   ans=1
   size=arr.length
@@ -44,6 +50,7 @@ module.exports = {
   sum,
   multiply,
   power,
-  factorial
+  factorial,
+  sum2
 };
 
